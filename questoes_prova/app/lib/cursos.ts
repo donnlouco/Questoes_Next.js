@@ -1,4 +1,4 @@
-export interface Cursos{
+export interface Curso{
     id: string;
     titulo: string;
     cargaHoraria: string;
@@ -6,7 +6,7 @@ export interface Cursos{
     preRequisitos: string[];
 }
 
-export const CURSOS: Cursos[] = [{
+export const CURSOS: Curso[] = [{
     id: "1",
     titulo: "Sistema Web",
     cargaHoraria: "51 horas",
@@ -26,3 +26,7 @@ export const CURSOS: Cursos[] = [{
     preRequisitos: [""]
 }
 ]
+
+export function buscarCursoPorId(id: string): Curso | undefined {
+  return CURSOS.find((curso) => curso.id === id);
+}
