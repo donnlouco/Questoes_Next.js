@@ -14,16 +14,16 @@ export const CURSOS: Curso[] = [{
     preRequisitos: ["Algoritmo e loginca", "Design e Desenvolvimento de Interfaces Web"],
 },{
     id: "2",
-    titulo: "Sistema Web",
-    cargaHoraria: "51 horas",
-    ementaDescritiva: "Fundamentos de desenvolvimento web: HTTP, HTML, CSS, JavaScript, arquitetura cliente-servidor e frameworks modernos como React e Next.js.",
-    preRequisitos: [""]
+    titulo: "Banco de Dados",
+    cargaHoraria: "60 horas",
+    ementaDescritiva: "Modelagem relacional, SQL, normalização, transações e introdução a bancos NoSQL.",
+    preRequisitos: ["Lógica de Programação", "Estruturas de Dados"]
 },{
     id: "3",
-    titulo: "Sistema Web",
-    cargaHoraria: "51 horas",
-    ementaDescritiva: "Fundamentos de desenvolvimento web: HTTP, HTML, CSS, JavaScript, arquitetura cliente-servidor e frameworks modernos como React e Next.js.",
-    preRequisitos: [""]
+    titulo: "Engenharia de software",
+    cargaHoraria: "70 horas",
+    ementaDescritiva: "Processos de desenvolvimento, metodologias ágeis, requisitos, arquitetura, testes e gestão de projetos de software.",
+    preRequisitos: ["Sistemas Web", "Banco de Dados"]
 }
 ]
 
