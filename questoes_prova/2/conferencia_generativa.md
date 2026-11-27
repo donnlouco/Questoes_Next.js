@@ -187,4 +187,4 @@ console.error("Erro ao salvar projetos no localStorage:", err);
     > 
 
 - **Como você validou que a solução gerada atende com rigor técnico aos requisitos do enunciado?**
-  > rodei o servidor e fui testando tudo que estava no enunciado, ate o momento nao achei erros
+  > Inseri um console.log dentro da função passada ao useMemo e acompanhei da aba Console do DevTools durante a interação com a interface.
