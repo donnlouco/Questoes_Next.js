@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+[data-alto-contraste="ativo"] code {
+  background-color: #fde047;
+  color: #09090b;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+}
+
+[data-tamanho-fonte="ampliada"] h1 {
+  font-size: 2rem;
+}

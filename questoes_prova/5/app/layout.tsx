@@ -1,16 +1,22 @@
-import type { ReactNode } from "react";
-import "./global.css";
+import type { Metadata } from "next";
+import { Providers } from "./providers";
+import "./globals.css";
 
-export const metadata = {
-  title: "Cursos",
-  description: "Catálogo de cursos",
+export const metadata: Metadata = {
+  title: "Portal de Comunicados - IFMS",
+  description: "Comunicação interna com segurança no servidor e acessibilidade dinâmica.",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  // RootLayout continua sendo um Server Component; passa `children` como prop para <Providers>.
   return (
     <html lang="pt-BR">
-      <body style={{display:"flex", margin: 0, fontFamily: "system-ui, sans-serif" }}>
-        {children}
+      <body>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
